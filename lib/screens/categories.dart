@@ -11,6 +11,7 @@ class CategoriesScreen extends StatelessWidget {
         title: const Text("Pick your Category"),
       ),
       body: GridView(
+        padding: EdgeInsets.all(25),
         gridDelegate:
             //no. of columns i want to have cross axis is from l to R, means 2 cols
             const SliverGridDelegateWithFixedCrossAxisCount(
