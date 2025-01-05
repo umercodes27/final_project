@@ -58,7 +58,7 @@ const availableCategories = [
 
 const dummyMeals = [
   Meal(
-    id: 'm1',
+    id: 1,
     categories: [
       'c1',
       'c2',
@@ -90,9 +90,10 @@ const dummyMeals = [
     isVegan: true,
     isVegetarian: true,
     isLactoseFree: true,
+    price: 10.99,
   ),
   Meal(
-    id: 'm2',
+    id: 2,
     categories: [
       'c2',
     ],
@@ -118,9 +119,10 @@ const dummyMeals = [
     isVegan: false,
     isVegetarian: false,
     isLactoseFree: false,
+    price: 10.99,
   ),
   Meal(
-    id: 'm3',
+    id: 3,
     categories: [
       'c2',
       'c3',
@@ -150,9 +152,10 @@ const dummyMeals = [
     isVegan: false,
     isVegetarian: false,
     isLactoseFree: true,
+    price: 10.99,
   ),
   Meal(
-    id: 'm4',
+    id: 4,
     categories: [
       'c4',
     ],
@@ -185,9 +188,10 @@ const dummyMeals = [
     isVegan: false,
     isVegetarian: false,
     isLactoseFree: false,
+    price: 10.99,
   ),
   Meal(
-    id: 'm5',
+    id: 5,
     categories: [
       'c2'
           'c5',
@@ -221,9 +225,10 @@ const dummyMeals = [
     isVegan: false,
     isVegetarian: true,
     isLactoseFree: true,
+    price: 10.99,
   ),
   Meal(
-    id: 'm6',
+    id: 6,
     categories: [
       'c6',
       'c10',
@@ -257,9 +262,10 @@ const dummyMeals = [
     isVegan: false,
     isVegetarian: true,
     isLactoseFree: false,
+    price: 10.99,
   ),
   Meal(
-    id: 'm7',
+    id: 7,
     categories: [
       'c7',
     ],
@@ -288,9 +294,10 @@ const dummyMeals = [
     isVegan: false,
     isVegetarian: true,
     isLactoseFree: false,
+    price: 10.99,
   ),
   Meal(
-    id: 'm8',
+    id: 8,
     categories: [
       'c8',
     ],
@@ -321,9 +328,10 @@ const dummyMeals = [
     isVegan: false,
     isVegetarian: false,
     isLactoseFree: true,
+    price: 10.99,
   ),
   Meal(
-    id: 'm9',
+    id: 9,
     categories: [
       'c9',
     ],
@@ -370,9 +378,10 @@ const dummyMeals = [
     isVegan: false,
     isVegetarian: true,
     isLactoseFree: false,
+    price: 10.99,
   ),
   Meal(
-    id: 'm10',
+    id: 10,
     categories: [
       'c2',
       'c5',
@@ -404,5 +413,6 @@ const dummyMeals = [
     isVegan: true,
     isVegetarian: true,
     isLactoseFree: true,
+    price: 10.99,
   ),
 ];

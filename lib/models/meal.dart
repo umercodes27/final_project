@@ -25,9 +25,10 @@ class Meal {
     required this.isLactoseFree,
     required this.isVegan,
     required this.isVegetarian,
+    required this.price, // Added the price field
   });
 
-  final String id;
+  final int id;
   final List<String> categories;
   final String title;
   final String imageUrl;
@@ -40,4 +41,5 @@ class Meal {
   final bool isLactoseFree;
   final bool isVegan;
   final bool isVegetarian;
+  final double price; // Added price field of type double
 }
