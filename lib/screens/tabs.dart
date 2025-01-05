@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:meals/auth/auth_service.dart';
 
 import 'package:meals/screens/categories.dart';
 import 'package:meals/screens/filters.dart';
@@ -25,6 +26,8 @@ class TabsScreen extends ConsumerStatefulWidget {
 }
 
 class _TabsScreenState extends ConsumerState<TabsScreen> {
+  final authService = AuthService();
+
   int _selectedPageIndex = 0;
 
   void _selectPage(int index) {
@@ -42,6 +45,11 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
         ),
       );
     }
+  }
+
+  void logout() async {
+    //logout
+    await authService.signOut();
   }
 
   @override
@@ -64,6 +72,12 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(activePageTitle),
+        actions: [
+          IconButton(
+            onPressed: logout,
+            icon: const Icon(Icons.logout),
+          )
+        ],
       ),
       drawer: MainDrawer(
         onSelectScreen: _setScreen,
