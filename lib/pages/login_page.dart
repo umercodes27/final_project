@@ -33,6 +33,9 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Login"),
+      ),
       backgroundColor: Colors.white, // Set background color to white
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 50),
